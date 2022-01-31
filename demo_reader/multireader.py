@@ -1,8 +1,16 @@
 import os
-from demo_reader.compressed import gzipped, bzipped
+import sys
+#from demo_reader.compressed import gzipped, bzipped
+from compressed import gzipped, bzipped
 
+print(sys.path)
 ## /Users/sbommireddy/Documents/python/python-journey/modules_packages/python-journey/demo_reader/multireader.py
+### /Users/sbommireddy/Documents/python/python-journey/modules_packages/python-journey/demo_reader/compressed/bzipped.py
+ext_map = {
+    '.bz2': bzipped.opener,
+    '.gzip': gzipped.opener
 
+}
 class MultiReader:
     def __init__(self,filename):
         self.filename = filename
