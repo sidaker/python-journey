@@ -4,6 +4,7 @@ import sys
 from compressed import gzipped, bzipped
 
 print(sys.path)
+print(__file__)
 ## /Users/sbommireddy/Documents/python/python-journey/modules_packages/python-journey/demo_reader/multireader.py
 ### /Users/sbommireddy/Documents/python/python-journey/modules_packages/python-journey/demo_reader/compressed/bzipped.py
 ext_map = {
